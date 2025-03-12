@@ -16,5 +16,4 @@ cp -pr * /
 popd
 
 # Set this JDK as the alternative in use
-_arch="$(uname -i)"
-alternatives --set java temurin-17-jre.${_arch}
+alternatives --set java /usr/lib/jvm/temurin-17-jre/bin/java

@@ -14,8 +14,7 @@ cp -pr * /
 popd
 
 # Set this JDK as the alternative in use
-_arch="$(uname -i)"
-alternatives --set java temurin-8-jdk.${_arch}
-alternatives --set javac temurin-8-jdk.${_arch}
+alternatives --set java /usr/lib/jvm/temurin-8-jdk/bin/java
+alternatives --set javac /usr/lib/jvm/temurin-8-jdk/bin/javac
 
 echo securerandom.source=file:/dev/urandom >> /usr/lib/jvm/temurin-8-jdk/jre/lib/security/java.security

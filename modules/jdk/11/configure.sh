@@ -14,9 +14,8 @@ cp -pr * /
 popd
 
 # Set this JDK as the alternative in use
-_arch="$(uname -i)"
-alternatives --set java temurin-11-jdk.${_arch}
-alternatives --set javac temurin-11-jdk.${_arch}
+alternatives --set java /usr/lib/jvm/temurin-11-jdk/bin/java
+alternatives --set javac /usr/lib/jvm/temurin-11-jdk/bin/javac
 
 # Update securerandom.source for quicker starts (must be done after removing jdk 8, or it will hit the wrong files)
 JAVA_SECURITY_FILE=/usr/lib/jvm/temurin-11-jdk/conf/security/java.security
