@@ -1,7 +1,7 @@
 schema_version: 1
 
-name: "jboss.container.openjdk.jdk"
-description: "Installs the JDK for OpenJDK 8."
+name: "opencollaboration.container.temurin.jdk"
+description: "Installs the JDK for Eclipse Temurin 8."
 version: "8"
 
 labels:
@@ -24,7 +24,7 @@ envs:
 
 packages:
   install:
-  - java-1.8.0-openjdk-devel
+  - temurin-8-jdk
 
 modules:
   install:

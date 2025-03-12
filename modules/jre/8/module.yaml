@@ -1,7 +1,7 @@
 schema_version: 1
 
-name: "jboss.container.openjdk.jre"
-description: "Installs only the JRE headless for OpenJDK 8."
+name: "opencollaboration.container.temurin.jre"
+description: "Installs only the JRE headless for Eclipse Temurin 8."
 version: "8"
 
 labels:
@@ -24,7 +24,7 @@ envs:
 
 packages:
   install:
-  - java-1.8.0-openjdk-headless
+  - temurin-8-jre
 
 modules:
   install:

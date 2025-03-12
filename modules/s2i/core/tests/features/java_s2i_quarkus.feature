@@ -1,7 +1,7 @@
 # builder only
-@ubi9/openjdk-11
-@ubi9/openjdk-17
-@ubi9/openjdk-21
+@opencollab-incubator/centos9-temurin-11
+@opencollab-incubator/centos9-temurin-17
+@opencollab-incubator/centos9-temurin-21
 Feature: Openshift OpenJDK S2I tests (Quarkus-based)
 
   Scenario: Ensure Quarkus CDS doesn't fail due to timestamp mismatch (OPENDJK-1673)

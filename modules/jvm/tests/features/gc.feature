@@ -1,4 +1,4 @@
-@ubi9
+@@opencollab-incubator
 Feature: Openshift OpenJDK GC tests
 
   Scenario: Check default GC configuration

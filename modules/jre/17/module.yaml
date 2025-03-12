@@ -1,7 +1,7 @@
 schema_version: 1
 
-name: "jboss.container.openjdk.jre"
-description: "Installs only the JRE headless for OpenJDK 17."
+name: "opencollaboration.container.temurin.jre"
+description: "Installs only the JRE headless for Eclipse Temurin 17."
 version: "17"
 
 labels:
@@ -24,7 +24,7 @@ envs:
 
 packages:
   install:
-  - java-17-openjdk-headless
+  - temurin-17-jre
 
 modules:
   install:

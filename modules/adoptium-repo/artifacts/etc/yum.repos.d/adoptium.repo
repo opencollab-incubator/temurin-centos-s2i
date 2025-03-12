@@ -1,0 +1,7 @@
+[Adoptium]
+name=Adoptium
+#baseurl=https://packages.adoptium.net/artifactory/rpm/centos/$releasever/$basearch
+baseurl=https://packages.adoptium.net/artifactory/rpm/fedora/42/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public

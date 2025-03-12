@@ -6,7 +6,7 @@ on:
     - 'ubi9'
     - 'gendocs'
     tags:
-    - 'ubi?-openjdk-containers*'
+    - 'centos?-temurin-containers*'
   workflow_dispatch:
 
 permissions:

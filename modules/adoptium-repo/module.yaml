@@ -1,0 +1,7 @@
+schema_version: 1
+name: opencollaboration.container.adoptium.repo
+version: '1.0'
+description: Installs the Adoptium repo
+
+execute:
+- script: configure.sh

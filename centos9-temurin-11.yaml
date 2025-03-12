@@ -2,10 +2,10 @@
 
 schema_version: 1
 
-from: "registry.access.redhat.com/ubi9/ubi-minimal"
-name: &name "ubi9/openjdk-21"
+from: "quay.io/centos/centos:stream9-minimal"
+name: &name "opencollab-incubator/centos9-temurin-11"
 version: &version "1.21"
-description: "Source To Image (S2I) image for Red Hat OpenShift providing OpenJDK 21"
+description: "Source To Image (S2I) image for OKD and Red Hat OpenShift providing Eclipse Temurin Java 11"
 
 labels:
 - name: "io.k8s.description"
@@ -15,13 +15,9 @@ labels:
 - name: "io.openshift.tags"
   value: "builder,java"
 - name: "maintainer"
-  value: "Red Hat OpenJDK <openjdk@redhat.com>"
-- name: "com.redhat.component"
-  value: "openjdk-21-ubi9-container"
+  value: "Open Collaboration <hello@opencollaboration.dev>"
 - name: "usage"
-  value: &docs "https://rh-openjdk.github.io/redhat-openjdk-containers/"
-- name: "com.redhat.license_terms"
-  value: "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+  value: &docs "https://opencollab-incubator.github.io/temurin-centos-s2i/"
 - name: "org.opencontainers.image.documentation"
   value: *docs
 - name: "name"
@@ -47,14 +43,12 @@ modules:
   repositories:
   - path: modules
   install:
+  - name: opencollaboration.container.adoptium.repo
   - name: jboss.container.util.pkg-update
-  - name: jboss.container.openjdk.jdk
-    version: "21"
-  - name: jboss.container.maven
-    version: "3.8.21"
+  - name: opencollaboration.container.temurin.jdk
+    version: "11"
   - name: jboss.container.util.tzdata
   - name: jboss.container.java.s2i.bash
-  - name: jboss.container.util.tzdata
 
 help:
   add: true

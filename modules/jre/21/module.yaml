@@ -1,6 +1,6 @@
 schema_version: 1
 
-name: "jboss.container.openjdk.jre"
+name: "opencollaboration.container.temurin.jre"
 description: "Installs only the JRE headless for OpenJDK 21."
 version: &jdkver "21"
 
@@ -24,7 +24,7 @@ envs:
 
 packages:
   install:
-  - java-21-openjdk-headless
+  - temurin-21-jre
 
 modules:
   install:

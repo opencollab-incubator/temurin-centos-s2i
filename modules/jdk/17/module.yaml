@@ -1,7 +1,7 @@
 schema_version: 1
 
-name: "jboss.container.openjdk.jdk"
-description: "Installs the JDK for OpenJDK 17."
+name: "opencollaboration.container.temurin.jdk"
+description: "Installs the JDK for Eclipse Temurin 17."
 version: "17"
 
 labels:
@@ -24,7 +24,7 @@ envs:
 
 packages:
   install:
-  - java-17-openjdk-devel
+  - temurin-17-jdk
 
 modules:
   install:

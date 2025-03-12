@@ -1,6 +1,6 @@
-# Source To Image (S2I) image for Red Hat OpenShift providing OpenJDK
+# Source To Image (S2I) image for OKD and Red Hat OpenShift providing Eclipse Temurin Java
 
-These are the OpenJDK Source to Image (S2I) images for Red Hat OpenShift.
+These are the OpenJDK Source to Image (S2I) images for OKD and Red Hat OpenShift.
 
 ## Acquiring the Images
 
@@ -32,25 +32,25 @@ These sources are prepared and tested for Cekit 4.1.1.
 
 ### Red Hat Universal Base Image 9 with OpenJDK 11
 
-    cekit --descriptor ubi9-openjdk-11.yaml build podman
+    cekit --descriptor centos9-temurin-11.yaml build podman
 
 This will produce an image named `ubi9/openjdk-11`.
 
 ### Red Hat Universal Base Image 9 with OpenJDK 17
 
-    cekit --descriptor ubi9-openjdk-17.yaml build podman
+    cekit --descriptor centos9-temurin-17.yaml build podman
 
 This will produce an image named `ubi9/openjdk-17`.
 
 ### Red Hat Universal Base Image 9 with OpenJDK 11 - Runtime
 
-    cekit --descriptor ubi9-openjdk-11-runtime.yaml build podman
+    cekit --descriptor centos9-temurin-11-runtime.yaml build podman
 
 This will produce an image named `ubi9/openjdk-11-runtime`.
 
 ### Red Hat Universal Base Image 9 with OpenJDK 17 - Runtime
 
-    cekit --descriptor ubi9-openjdk-17-runtime.yaml build podman
+    cekit --descriptor centos9-temurin-17-runtime.yaml build podman
 
 This will produce an image named `ubi9/openjdk-17-runtime`.
 

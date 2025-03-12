@@ -1,7 +1,7 @@
 schema_version: 1
 
-name: "jboss.container.openjdk.jdk"
-description: "Installs the JDK for OpenJDK 11."
+name: "opencollaboration.container.temurin.jdk"
+description: "Installs the JDK for Eclipse Temurin 11."
 version: "11"
 
 labels:
@@ -24,8 +24,7 @@ envs:
 
 packages:
   install:
-  - java-11-openjdk-devel
-  - tzdata-java
+  - temurin-11-jdk
 
 modules:
   install:

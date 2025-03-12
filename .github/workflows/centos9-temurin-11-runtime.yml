@@ -1,10 +1,10 @@
-name: UBI9 OpenJDK 11 Runtime S2I Image CI
+name: CentOS Stream 9 Eclipse Temurin 11 Runtime S2I Image CI
 on: [push, pull_request]
 env:
   LANG: en_US.UTF-8
-  IMAGE: ubi9-openjdk-11-runtime
+  IMAGE: centos9-temurin-11-runtime
 jobs:
   call-openjdkci:
     uses: ./.github/workflows/image-workflow-template.yml
     with:
-      image: ubi9-openjdk-11-runtime
+      image: centos9-temurin-11-runtime

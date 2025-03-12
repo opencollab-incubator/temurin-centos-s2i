@@ -1,8 +1,8 @@
 # temporarily marking 'ignore' so these tests are skipped on GHA
 @ignore
-@ubi9/openjdk-11
-@ubi9/openjdk-17
-@ubi9/openjdk-21
+@opencollab-incubator/centos9-temurin-11
+@opencollab-incubator/centos9-temurin-17
+@opencollab-incubator/centos9-temurin-21
 Feature: Openshift OpenJDK S2I tests
 # NOTE: these tests should be usable with the other images once we have refactored the JDK scripts.
 # These builds do not actually run maven. This is important, because the proxy

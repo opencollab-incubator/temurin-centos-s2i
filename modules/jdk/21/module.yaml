@@ -1,7 +1,7 @@
 schema_version: 1
 
-name: "jboss.container.openjdk.jdk"
-description: "Installs the JDK for OpenJDK 21."
+name: "opencollaboration.container.temurin.jdk"
+description: "Installs the JDK for Eclipse Temurin 21."
 version: &jdkver "21"
 
 labels:
@@ -24,7 +24,7 @@ envs:
 
 packages:
   install:
-  - java-21-openjdk-devel
+  - temurin-21-jdk
 
 modules:
   install:
