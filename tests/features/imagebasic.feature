@@ -6,7 +6,7 @@ Feature: Tests for all openshift images
     # UBI base image versions are the RHEL version, e.g. "9.2", whereas all of
     # our image versions (so far) have been 1.x
     Then the image should contain label version containing value 1.
-    And the image should contain label name containing value openjdk
+    And the image should contain label name containing value temurin
 
   # builder-only test
   @opencollab-incubator/centos9-temurin-11
