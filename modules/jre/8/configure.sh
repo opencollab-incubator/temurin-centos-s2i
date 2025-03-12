@@ -15,4 +15,4 @@ popd
 
 # Set this JDK as the alternative in use
 _arch="$(uname -i)"
-alternatives --set java java-1.8.0-openjdk.${_arch}
+alternatives --set java temurin-8-jre.${_arch}

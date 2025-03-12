@@ -14,9 +14,9 @@ labels:
 
 envs:
 - name: "JAVA_HOME"
-  value: "/usr/lib/jvm/jre"
+  value: "/usr/lib/jvm/temurin-21-jre"
 - name: "JAVA_VENDOR"
-  value: "openjdk"
+  value: "Adoptium"
 - name: "JAVA_VERSION"
   value: *jdkver
 - name: JBOSS_CONTAINER_OPENJDK_JRE_MODULE

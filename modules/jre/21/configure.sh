@@ -17,4 +17,4 @@ popd
 
 # Set this JDK as the alternative in use
 _arch="$(uname -i)"
-alternatives --set java java-21-openjdk.${_arch}
+alternatives --set java temurin-21-jre.${_arch}

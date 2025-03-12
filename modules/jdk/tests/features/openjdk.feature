@@ -6,9 +6,10 @@ Feature: Miscellaneous OpenJDK-related unit tests
     When container is started with args
     | arg     | value   |
     | command | rpm -qa |
-    Then available container log should not contain java-1.8.0
-    Then available container log should not contain java-17
-    Then available container log should not contain java-21
+    Then available container log should not contain java
+    Then available container log should not contain temurin-8
+    Then available container log should not contain temurin-17
+    Then available container log should not contain temurin-21
 
   @opencollab-incubator/centos9-temurin-17
   @opencollab-incubator/centos9-temurin-17-runtime
@@ -16,9 +17,10 @@ Feature: Miscellaneous OpenJDK-related unit tests
     When container is started with args
     | arg     | value   |
     | command | rpm -qa |
-    Then available container log should not contain java-1.8.0
-    Then available container log should not contain java-11
-    Then available container log should not contain java-21
+    Then available container log should not contain java
+    Then available container log should not contain temurin-8
+    Then available container log should not contain temurin-11
+    Then available container log should not contain temurin-21
 
   @opencollab-incubator/centos9-temurin-21
   @opencollab-incubator/centos9-temurin-21-runtime
@@ -26,9 +28,10 @@ Feature: Miscellaneous OpenJDK-related unit tests
     When container is started with args
     | arg     | value   |
     | command | rpm -qa |
-    Then available container log should not contain java-1.8.0
-    Then available container log should not contain java-11
-    Then available container log should not contain java-17
+    Then available container log should not contain java
+    Then available container log should not contain temurin-8
+    Then available container log should not contain temurin-11
+    Then available container log should not contain temurin-17
 
   @opencollab-incubator
   Scenario: Ensure JAVA_HOME is defined and contains Java
@@ -52,9 +55,10 @@ Feature: Miscellaneous OpenJDK-related unit tests
     When container is started with args
     | arg     | value   |
     | command | ls -1 /usr/lib/jvm |
-    Then available container log should not contain java-1.8.0
-    Then available container log should not contain java-17
-    Then available container log should not contain java-21
+    Then available container log should not contain temurin-8
+    Then available container log should not contain temurin-17
+    Then available container log should not contain temurin-21
+    Then available container log should not contain java
 
   @opencollab-incubator/centos9-temurin-17
   @opencollab-incubator/centos9-temurin-17-runtime
@@ -62,9 +66,10 @@ Feature: Miscellaneous OpenJDK-related unit tests
     When container is started with args
     | arg     | value   |
     | command | ls -1 /usr/lib/jvm |
-    Then available container log should not contain java-1.8.0
-    Then available container log should not contain java-11
-    Then available container log should not contain java-21
+    Then available container log should not contain temurin-8
+    Then available container log should not contain temurin-11
+    Then available container log should not contain temurin-21
+    Then available container log should not contain java
 
   @opencollab-incubator/centos9-temurin-21
   @opencollab-incubator/centos9-temurin-21-runtime
@@ -72,9 +77,10 @@ Feature: Miscellaneous OpenJDK-related unit tests
     When container is started with args
     | arg     | value   |
     | command | ls -1 /usr/lib/jvm |
-    Then available container log should not contain java-1.8.0
-    Then available container log should not contain java-11
-    Then available container log should not contain java-17
+    Then available container log should not contain temurin-8
+    Then available container log should not contain temurin-11
+    Then available container log should not contain temurin-17
+    Then available container log should not contain java
 
   @opencollab-incubator
   Scenario: Ensure LANG is defined and contains UTF-8

@@ -15,9 +15,7 @@ popd
 
 # Set this JDK as the alternative in use
 _arch="$(uname -i)"
-alternatives --set java java-1.8.0-openjdk.${_arch}
-alternatives --set javac java-1.8.0-openjdk.${_arch}
-alternatives --set java_sdk_openjdk java-1.8.0-openjdk.${_arch}
-alternatives --set jre_openjdk java-1.8.0-openjdk.${_arch}
+alternatives --set java temurin-8-jdk.${_arch}
+alternatives --set javac temurin-8-jdk.${_arch}
 
-echo securerandom.source=file:/dev/urandom >> /usr/lib/jvm/java/jre/lib/security/java.security
+echo securerandom.source=file:/dev/urandom >> /usr/lib/jvm/temurin-8-jdk/jre/lib/security/java.security
